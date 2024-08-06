@@ -17,9 +17,7 @@ const CallList = ({ type }: { type: "ended" |
         const { endedCalls, upcomingCalls, callRecordings, isLoading } = useGetCalls();
 
         const router = useRouter()
-
         const [recordings, setRecordings] = useState<CallRecording[]>([])
-
         const {toast} = useToast()
 
         const getCalls = () => {
